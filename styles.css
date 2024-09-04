@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto como Arial, ou sans-serif se Arial não estiver disponível */
+    display: flex; /* Define um layout flexível para o corpo da página */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização */
+    background-color: #f0f0f0; /* Define a cor de fundo do corpo da página como um cinza claro */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+}
+
+.calculator {
+    border: 2px solid #333; /* Define uma borda de 2px com cor preta ao redor da calculadora */
+    border-radius: 10px; /* Define bordas arredondadas de 10px para a calculadora */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px ao redor do conteúdo da calculadora */
+    background-color: #fff; /* Define a cor de fundo da calculadora como branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor da calculadora para criar um efeito de elevação */
+}
+
+.display {
+    width: 260px; /* Define a largura da área de exibição da calculadora como 260px */
+    height: 50px; /* Define a altura da área de exibição da calculadora como 50px */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px abaixo da área de exibição */
+    text-align: right; /* Alinha o texto da área de exibição à direita */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor do texto da área de exibição */
+    font-size: 24px; /* Define o tamanho da fonte da área de exibição como 24px */
+    border: 1px solid #ccc; /* Define uma borda de 1px com cor cinza clara ao redor da área de exibição */
+    border-radius: 5px; /* Define bordas arredondadas de 5px para a área de exibição */
+}
+
+.buttons {
+    display: grid; /* Define um layout de grade para os botões */
+    grid-template-columns: repeat(5, 52px); /* Cria 5 colunas de 52px de largura cada */
+    gap: 5px; /* Define um espaçamento de 5px entre os botões */
+}
+
+.buttons button {
+    width: 50px; /* Define a largura de cada botão como 50px */
+    height: 50px; /* Define a altura de cada botão como 50px */
+    font-size: 18px; /* Define o tamanho da fonte dos botões como 18px */
+    border: none; /* Remove as bordas padrão dos botões */
+    border-radius: 5px; /* Define bordas arredondadas de 5px para os botões */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre os botões, indicando que são clicáveis */
+    background-color: #e0e0e0; /* Define a cor de fundo dos botões como cinza claro */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança da cor de fundo dos botões */
+}
+
+.buttons button:hover {
+    background-color: #d0d0d0; /* Muda a cor de fundo dos botões para um cinza um pouco mais escuro quando o mouse passa sobre eles */
+}
+
+.buttons button:active {
+    background-color: #c0c0c0; /* Muda a cor de fundo dos botões para um cinza ainda mais escuro quando são clicados */
+}
+
